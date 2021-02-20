@@ -1,5 +1,6 @@
 import urwid
 import pyperclip
+from pathlib import Path
 
 #vars
 headers = []
@@ -9,7 +10,8 @@ comDict = {}
 header = ""
 previousLine = ""
 
-file1 = open('notes.txt', 'r')
+notesFile = str(Path.home()) + "/.scripts/notes"
+file1 = open(notesFile, 'r')
 lines = file1.readlines()
 for line in lines:
     line = line.strip()
