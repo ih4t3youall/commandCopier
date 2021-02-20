@@ -8,7 +8,7 @@ bracketOpen = False
 commands = []
 comDict = {}
 header = ""
-previousLine = ""
+previousLine = "None"
 
 notesFile = str(Path.home()) + "/.scripts/notes"
 file1 = open(notesFile, 'r')
